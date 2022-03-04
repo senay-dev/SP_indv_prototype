@@ -1,7 +1,7 @@
 # Storing a Profile Photo in S3; Storing link in RDS
 
 
-## Step 1: Upload image to S3 on Android Studio
+## Upload image to S3 on Android Studio
 Create Amazon S3 client
 `AmazonS3Client s3Client =   new AmazonS3Client( new BasicAWSCredentials( MY_ACCESS_KEY_ID, MY_SECRET_KEY ) );`
 
