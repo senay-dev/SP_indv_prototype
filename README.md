@@ -11,7 +11,7 @@ Database will connect to AWS and to the RDS via java's JDBC
 #### and update their image column in the User table in RDS with the S3 URL.
 
 ## Get a user's profile image
-sql.getImage(currUserName);
+`sql.getImage(currUserName);`
 #### Returns the image as byte[]
 
 ### User table structure
