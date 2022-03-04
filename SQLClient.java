@@ -37,14 +37,8 @@ public class SQLClient(){
 		s3Client.putObject( por );
 		
 		//Update SQL Table
-		ResponseHeaderOverrides override = new ResponseHeaderOverrides(); 
-		override.setContentType( "image/jpeg" ); 
-
-		GeneratePresignedUrlRequest urlRequest = new GeneratePresignedUrlRequest( bucketName, pictureName);
-		urlRequest.setExpiration(new Date( System.currentTimeMillis() + 3600000 ) ); 
-		urlRequest.setResponseHeaders( override );
-		
-		String url = s3Client.generatePresignedUrl( urlRequest ).toURI().toString();
+		//S3 url 
+		String url = bucketName+"/"+pictureName;
 		
 		String statement = "UPDATE USER SET image=? where username=?"; 
 		PreparedStatement ps = con.prepareStatement(statement); 
