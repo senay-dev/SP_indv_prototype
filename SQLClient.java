@@ -1,6 +1,6 @@
 import java.sql.*;
-import software.amazon.awssdk.services.s3.*;
-import software.amazon.awssdk.services.s3.model.*;
+import com.amazonaws.services.s3.*;
+import com.amazonaws.services.s3.model.*;
 public class SQLClient(){
 	private AmazonS3Client s3Client;
 	private Connection con;
