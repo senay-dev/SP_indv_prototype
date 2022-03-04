@@ -1,4 +1,4 @@
-# Storing a Profile Photo in S3; Storing link in RDS
+# Storing a Profile Photo in S3; Storing photo's S3 URL in RDS
 
 
 ## Upload image to S3 on Android Studio
